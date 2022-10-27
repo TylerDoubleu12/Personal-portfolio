@@ -1,8 +1,9 @@
-# Personal Portfolio Project
+# Personal Portfolio Project(IN PROGRESS)
 
 ## This project was created for the intent to display all of my personal work as a programmer. It particulary demonstrates my abilities with Javascript, HTML and CSS.
 
 # Demo-Preview
+![Uploading Screen Shot 2022-10-27 at 1.42.17 PM.png…]()
 
 # Table of contents
 
