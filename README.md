@@ -1,9 +1,10 @@
-# Personal Portfolio Project(IN PROGRESS)
+# Personal Portfolio Project (STILL IN PROGRESS)
 
 ## This project was created for the intent to display all of my personal work as a programmer. It particulary demonstrates my abilities with Javascript, HTML and CSS.
 
 # Demo-Preview
-![Uploading Screen Shot 2022-10-27 at 1.42.17 PM.png…]()
+
+<img width="1245" alt="Screen Shot 2022-10-27 at 1 42 17 PM" src="https://user-images.githubusercontent.com/106890286/198361279-56400eb6-d9ff-4c0f-ba4f-83cf5b2ea8a8.png">
 
 # Table of contents
 
