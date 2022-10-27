@@ -1,6 +1,6 @@
 # Personal Portfolio Project
 
-##This project was created for the intent to display all of my personal work as a Front-End Web Developer. It particulary demonstrates my abilities with Javascript, HTML and CSS.
+## This project was created for the intent to display all of my personal work as a programmer. It particulary demonstrates my abilities with Javascript, HTML and CSS.
 
 # Demo-Preview
 
