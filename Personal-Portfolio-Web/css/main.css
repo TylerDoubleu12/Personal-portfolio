@@ -1,0 +1,487 @@
+/*
+ *
+ * CSS written based on SMACSS architecture.
+ * To learn more, visit: http://smacss.com/
+ * 
+ * For simplicity, no reset or normalize is added. 
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *
+*/
+
+/* ---- Base Rules ---- */
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body {
+    background:black;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    
+}
+
+/* ---- Module Rules ---- */
+
+/* Navigation Styles*/
+
+.navbar{
+    top: 0;
+    width:100%;
+    background-color: cadetblue;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: none;
+    
+    
+}
+
+.navtag{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-link{
+    transition: 0.3s ease;
+}
+
+.navtag li.active:hover{
+     cursor:pointer;
+    background-color:seagreen;
+}
+
+.navtag li.active{
+    cursor:pointer;
+   background-color:seagreen;
+}
+
+li{
+    list-style-type: none;
+    color:white;
+    font-size:18pt;
+    padding: 0;
+    margin:10px;
+    text-decoration: none;    
+}
+
+/* ---- Layout Rules ---- */
+
+section{
+    min-height: 800px;
+    display: flex;
+    color: white;
+}
+
+#sec1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+#sec2,#sec4{
+    background-color: rgb(14, 13, 13);      
+}
+
+#sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#sec3{
+    background-image: radial-gradient(white 8%, transparent 8%),
+      radial-gradient(#fafafa 5%, transparent 5%);
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px;
+  
+}
+
+
+
+footer{
+    background:black;
+    height:200px;
+}
+
+
+/**when changing the size of the browser, toggle navigation menu will appear instead**/
+
+@media(min-width:576px){
+  h1{
+      font:56pt;
+  }
+}
+
+/**Header**/
+
+.portfolioStart{
+    background-image:url('FE.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:0;
+    height:800px;
+    width:1300px;
+    display:flex;
+    flex-direction: column;
+   
+    
+
+}
+.titleHolder,.titleHolder2{
+    height:400px;
+    
+}
+
+.titleHolder{
+    background-color: aquamarine;
+    width:400px;
+}
+
+.titleHolder2{
+    width:700px;
+    background-color: rgb(233, 231, 231);
+    background: rgba(233, 231, 231 , 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+/**About Me **/
+
+.pictureFrame{
+    background-image:url("ME.JPG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    width: 400px;
+    border-radius: 45%;
+    margin: 10px 40px 50px 0px;
+    padding: 10px;
+}
+
+.wordage{
+    height: 280px;
+    width: 400px; 
+    display: flex;
+    background-color: teal;
+}
+
+.media{
+    height:80px;
+    width:100%;
+    display:flex; 
+    
+  
+}
+
+.square{
+    
+    display: flex;
+
+}
+
+.column1{
+    height: 500px;
+    width: 400px;
+    margin:10px;
+    display: flex;
+    display: inline-block;
+    
+}
+
+.column2{
+    
+    height:600px;
+    width:600px;
+    text-align: center;
+   
+}
+
+.bio{
+    display: flex;
+    cursor: pointer;
+    position: relative; 
+}
+
+.bio::after{
+    width:0;
+    height: 3px;
+    position: absolute;
+    background-color: teal;
+    center: 0;
+    top:20px;
+    transition:0.5s;
+    content: '';
+}
+
+.bio.active::after{
+    width:70%; 
+}
+
+.content{
+    height:400px;
+    margin:40px 0 20px;
+    display: none;
+
+}
+
+.content ul li{
+    text-align: left;
+    margin:15px;
+    font-size:15px;
+    color: white;
+    list-style-type: none;
+}
+
+.content ul li span{
+    color:teal;
+    font:20px;
+    
+
+}
+
+.content{
+    display: none;
+}
+
+.content.active-now{
+    display:block;
+}
+
+.originBackground{
+    background-color:white;
+    height:400px;
+    width:600px;
+    margin: 50px 0px 0px -10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.circl{
+    height:180px;
+    width:180px;
+    border-radius: 50%;
+    background-color: teal;
+}
+
+.arrow {
+    border: teal;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+
+/**Navigation Bar and Header Styling**/
+.logo{
+    margin:10px;
+    background:linear-gradient(60deg,powderblue,seagreen);
+    background-clip: text;
+    color: transparent;
+    font-size: 33pt;
+    display: inline;
+    cursor: pointer;
+   
+}
+
+.button {
+    background-color: #1e306d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button.active:hover{
+    background-color: salmon;
+}
+
+/**Section 2 Items and Styling**/
+
+.tabLinks{
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 10%;
+    perspective: 1000px;
+    display: flex;
+   
+}
+
+.tabLinks-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .tabLinks:hover .tabLinks-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .tabLinks-front, .tabLinks-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .tabLinks-front {
+    background-color: black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .tabLinks-back {
+    background-color: cadetblue;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+  }
+
+.PandS{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+.skills{
+    height:100px;
+    width:100px;
+    background-color: #449b87;
+    position:relative;
+  
+}
+
+.skillsqr{
+    height:300px;
+    width:300px;
+    background-color: rgb(170, 211, 158);
+    margin: 20px 20px 0 0;
+}
+
+.skillsqr:hover{
+    background-color: teal;
+    color:rgb(170, 211, 158);
+    transform: translate(10px, -20px);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.sqrcontent{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Typeography General*/
+
+h1{
+    font-size: 60pt;
+    padding:300px;
+    text-align: left;
+    color:rgb(33, 66, 55);
+}
+
+
+h2.active{
+    font-size: 25pt;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-moz-keyframes fadeIn{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+p{
+    font-size: 16pt;
+    color: black;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+    margin: 20px;
+    padding:20px;
+    
+    
+}
+
+p.bio{
+    font: 10px;
+    color: azure;
+}
+
+h3{
+    font-size: 20px;
+    color: white;
+}
+
+h3.switch{
+    font-size: 20px;
+    color: grey;
+}
+
+p.org{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:10pt;
+    color: black;
+}
+
+
+
+
